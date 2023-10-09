@@ -1,0 +1,855 @@
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Home section*/
+.home {
+    height: 100vh;
+    background-image: url('../assets/img/pembuka2.jpg');
+    background-size: cover;
+    padding: 15px;
+    /* -webkit-display: flex; */
+    display: flex;
+    /* position: relative; */
+}
+
+.home .container {
+    margin-top: 200px;
+    -webkit-display: flex;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.home h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0%;
+    text-align: center;
+}
+
+.home h1 span {
+    background-color: white;
+    padding: 2px;
+    /* border-radius: 10px; */
+    color: black;
+    text-align: center;
+}
+
+.active {
+    background-color: black;
+    color: black;
+}
+
+header {
+    background-color: white;
+    /* opacity: 90%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    margin-bottom: 10px;
+}
+
+/* Gambar Logo Heading */
+header a img {
+    width: 50px;
+    height: 50px;
+    padding: auto;
+    float: left;
+}
+
+/*Navbar*/
+nav ul {
+    position: relative;
+    float: center;
+    margin: auto;
+}
+
+nav li {
+    position: relative;
+    display: inline-block;
+}
+
+nav li a {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40px;
+    font-size: 20px;
+    padding: 10px 24px;
+}
+
+nav li a:after {
+    position: relative;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+nav li a:hover:after {
+    position: relative;
+    width: 100%;
+    background: black;
+}
+
+#main-content {
+    background-color: white;
+    padding: 20px;
+}
+
+/*About us*/
+.about p {
+    color: black;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.about h3 {
+    text-align: center;
+}
+
+.marimulaibekerja {
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    word-spacing: 2px;
+}
+
+.menjalaniwinningways {
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    word-spacing: 2px;
+}
+
+.join {
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    word-spacing: 2px;
+    font-size: x-large;
+}
+
+.join p {
+    color: black;
+    font-size: large;
+}
+
+#slider {
+    width: 1000px;
+    height: 230px;
+    overflow: hidden;
+    border: 1px solid;
+    position: relative;
+}
+
+.slide {
+    width: 350px;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+#slide-holder {
+    width: 400%;
+    position: relative;
+    left: 0;
+    -webkit-animation: scroller 10s infinite;
+    animation: scroller 10s infinite;
+}
+
+@-webkit-keyframes scroller {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    33% {
+        -webkit-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+
+    66% {
+        -webkit-transform: translateX(-800px);
+        transform: translateX(-800px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes scroller {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    33% {
+        -webkit-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+
+    66% {
+        -webkit-transform: translateX(-800px);
+        transform: translateX(-800px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#slider {
+    margin: 0 auto;
+}
+
+.slide:nth-child(1) {
+    background: black;
+}
+
+.slide:nth-child(2) {
+    background: black;
+}
+
+.slide:nth-child(3) {
+    background: black;
+}
+
+/*Nutrition*/
+.nutrition {
+    padding: 80px 0px;
+    background-color: black;
+}
+
+.nutrition h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    padding: 0px 0px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nutrition .tulisan {
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 0 20% 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.nutrition .konten {
+    -webkit-display: flex;
+    display: flex;
+}
+
+.nutrition .konten .kotak {
+    padding: 15px;
+    display: flex;
+}
+
+.nutrition .konten .kotak .inner {
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+
+.nutrition .konten .kotak:nth-child(2) .inner {
+    background-color: black;
+}
+
+.nutrition .konten .kotak .inner .img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.nutrition .konten .kotak .inner .text {
+    padding: 30px;
+}
+
+.nutrition .konten .kotak .inner .text h4 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0px 0px 15px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nutrition .konten .kotak .inner .text p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nutrition .konten .kotak .inner .text p1 {
+    color: rgb(26, 151, 228);
+    /*End nutrition*/
+}
+
+/*Classes section*/
+.kelas {
+    padding: 80px 0px;
+    background-color: white;
+}
+
+.kelas h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.kelas .tulisan {
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    margin: 0;
+    text-align: center;
+    padding: 0 20% 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.kelas .konten {
+    -webkit-display: flex;
+    display: flex;
+}
+
+.kelas .konten .kotak {
+    display: flex;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.kelas .konten .kotak .inner {
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+
+.kelas .konten .kotak:nth-child(2) .inner {
+    background-color: black;
+}
+
+.kelas .konten .kotak .inner .img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.kelas .konten .kotak .inner .text {
+    padding: 30px;
+}
+
+.kelas .konten .kotak .inner .text h4 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0px 0px 15px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.kelas .konten .kotak .inner .text p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.kelas .konten .kotak .inner .text p1 {
+    color: rgb(26, 151, 228);
+    /*End Classes section*/
+}
+
+.kelas .konten .kotak .inner .text .hehe {
+    padding: 8px 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: 3px;
+    margin-left: 30%;
+}
+
+.kelas .konten .kotak .inner .text .hehe:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: transparent;
+}
+
+/*Start Today Section*/
+.mulai-sekarang {
+    background-color: black;
+}
+
+.mulai-sekarang .content {
+    -webkit-display: flex;
+    display: flex;
+    align-items: center;
+}
+
+.mulai-sekarang .content .box {
+    flex: auto;
+    max-width: 50%;
+    padding: 0px 15px;
+}
+
+.mulai-sekarang .content .img img {
+    width: 100%;
+    display: block;
+}
+
+.mulai-sekarang .content .text h2 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0px 0px 20px;
+}
+
+.mulai-sekarang .content .text p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mulai-sekarang .content .text .jejak {
+    padding: 8px 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.mulai-sekarang .content .text .jejak:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: transparent;
+    /*End Today Section*/
+}
+
+/*Price Section*/
+
+.price-package {
+    padding: 80px 0px;
+    background-color: #ffffff;
+}
+
+.price-package h2 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.price-package .title-p {
+    font-size: 20px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    text-align: center;
+    padding: 0 20% 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.price-package .content {
+    -webkit-display: flex;
+    display: flex;
+}
+
+.price-package .content .box {
+    flex: auto;
+    max-width: 33.33%;
+    padding: 15px;
+}
+
+.price-package .content .wow .inner {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.price-package .content .box:nth-child(2) .inner {
+    background-color: darkcyan;
+}
+
+.price-package .content .box .inner .price-tag {
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.price-package .content .box:nth-child(2) .inner .price-tag {
+    padding: 15px;
+    font-size: 20px;
+    background-color: darkcyan;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.price-package .content .box .inner .text {
+    padding: 30px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price-package .content .box .inner .text h3 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    padding: 0px 0px 20px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.price-package .content .box .inner .text p {
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 0 0 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.price-package .content .box .inner .text .btn {
+    padding: 8px 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-top: 10px;
+}
+
+.price-package .content .box .inner .text .btn:hover {
+    border-color: white;
+    color: white;
+    background-color: transparent;
+}
+
+.price-package .content .box .inner .img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*Contact us*/
+.row {
+    margin-top: 45px;
+}
+
+.contact-info {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 20px 0px;
+    border-radius: 20px;
+}
+
+.contact-info-icon {
+    margin-bottom: 15px;
+}
+
+.contact-info-item {
+    margin-top: 30px;
+    background: darkcyan;
+    padding: 20px 0px;
+    border-radius: 100px;
+}
+
+.contact-page-sec .contact-page-form h2 {
+    color: #071c34;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-page-form .col-md-6.col-sm-6.col-xs-12 {
+    padding-left: 0;
+}
+
+.contact-page-form.contact-form input {
+    margin-bottom: 5px;
+}
+
+.contact-page-form.contact-form textarea {
+    height: 110px;
+}
+
+.contact-page-form.contact-form input[type="submit"] {
+    background: #071c34;
+    width: 150px;
+    border-color: #071c34;
+}
+
+.contact-info-icon i {
+    font-size: 48px;
+    color: black;
+}
+
+.contact-info-text p {
+    margin-bottom: 0px;
+}
+
+.contact-info-text h2 {
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-info-text span {
+    color: black;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-page-form input {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.contact-page-form .message-input {
+    display: inline-block;
+    width: 50%;
+    padding-left: 0;
+}
+
+.single-input-field textarea {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #f9f9f9;
+    width: 80%;
+    height: 100px;
+    padding: 12px 16px;
+    border-radius: 4px;
+}
+
+.single-input-fieldsbtn input[type="submit"] {
+    background: darkcyan none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 0;
+    text-transform: capitalize;
+    width: 150px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.single-input-fieldsbtn input[type="submit"]:hover {
+    background: #071c34;
+    transition: all 0.4s ease-in-out 0s;
+    border-color: #071c34
+}
+
+.single-input-field h4 {
+    color: black;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-page-form {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-page-map {
+    margin-top: 30px;
+}
+
+.contact-page-form form {
+    padding: 20px 15px 0;
+}
+
+.profile {
+    margin-top: 70px;
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    background-color: darkcyan;
+
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile h2 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile h3 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Footer*/
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-choose img {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.footer-choose .bottom {
+    display: inline-block;
+}
+
+.footer-choose .bottom .kotak ul {
+    text-align: left;
+}
+
+.footer-choose .bottom .kotak ul li {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.footer-choose .bottom .kotak a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-choose .bottom .kotak a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.footer-choose .bottom .kotak a:hover::after {
+    width: 100%;
+    background: #ffffff;
+}
+
+.footer-choose {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+.copyright {
+    color: black;
+    text-align: center;
+}
+
+/* memberikan trasnsisi dan pergerakan secara horizontal pada class element sekaligus menghilankan elementnya*/
+.container {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+/* memunculkan kembali elementnya */
+.tampil {
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* media query */
+@media (max-width: 900px) {
+    section h1 {
+        font-size: 3rem;
+    }
+
+    section .kotak {
+        flex-direction: column;
+    }
+}
+/* IPhone 5 */
+@media screen and (max-width: 320px) {}
+
+/* Google Pixel */
+@media screen and (max-width: 411px) {}
+
+/* IPhone 6 Plus */
+@media screen and (max-width: 414px) {}
